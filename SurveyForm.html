@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="SurveyForm.css" />
+  </head>
+  <body>
+    <!--SurveyForm START-->
+    <div id="container">
+      <header>
+        <h1 id="title">Game Survey Form</h1>
+        <p id="description">
+          Thank you for the time taken to fill out this form. <br />
+          Your information will not be given out as regards to our safety
+          policy.
+        </p>
+      </header>
+
+      <!--FORM-->
+      <form id="survey-form">
+        <div id="form-container">
+          <!--Input Name-->
+          <div class="form-input">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Input name"
+              required
+            />
+          </div>
+
+          <!--Input Email Address-->
+          <div class="form-input">
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Input email address"
+              required
+            />
+          </div>
+
+          <!--Input Age-->
+          <div class="form-input">
+            <label for="number" id="number-label">Age</label>
+            <input
+              type="number"
+              id="number"
+              name="age"
+              min="8"
+              max="70"
+              placeholder="Specify age"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <!--Dropdown Box-->
+          <div class="form-input">
+            <p id="p-dropdown">What type of games do you prefer ?</p>
+            <select name="genre" id="dropdown">
+              <option value selected disabled>Select Game Genre</option>
+              <option value="simulation">Simulation</option>
+              <option value="adventure">Adventure</option>
+              <option value="roleplay">Role-playing</option>
+              <option value="strategy">Strategy</option>
+              <option value="quiz">Quiz</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!--Option Select-->
+          <div class="form-input">
+            <p id="p-radio">
+              Would you recommend your game preference to a friend?
+            </p>
+            <label id="radio-label">
+              <input
+                name="recommend"
+                value="yes"
+                type="radio"
+                class="slect"
+              />Yes</label
+            >
+            <label id="radio-label">
+              <input type="radio" name="recommend" class="select" value="no" />
+              No
+            </label>
+            <label id="radio-label">
+              <input
+                type="radio"
+                value="maybe"
+                name="recommend"
+                class="select"
+              />
+              Maybe
+            </label>
+          </div>
+
+          <!--Checkbox Group-->
+          <div class="form-input">
+            <p id="p-checkbox">
+              What other game genres do you like? (Check all that apply)
+            </p>
+            <label
+              ><input
+                name="pick"
+                value="sports"
+                type="checkbox"
+                class="check"
+              />Sports</label
+            >
+            <label>
+              <input type="checkbox" value="action" name="pick" class="check" />
+              Action
+            </label>
+            <label>
+              <input type="checkbox" value="mmo" name="pick" class="check" />
+              MMO
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="action-adventure"
+                name="pick"
+                class="check"
+              />
+              Action-adventure
+            </label>
+            <label>
+              <input type="checkbox" value="horror" name="pick" class="check" />
+              Horror
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                value="open-world"
+                name="pick"
+                class="check"
+              />
+              Open-world
+            </label>
+            <label>
+              <input type="checkbox" value="others" name="pick" class="check" />
+              Others
+            </label>
+          </div>
+
+          <!--Text area-->
+          <div class="form-input">
+            <p id="p-textarea">Any comments ?</p>
+            <textarea
+              id="comment"
+              class="comment-area"
+              name="comment"
+              placeholder="Enter comments here..."
+            ></textarea>
+          </div>
+
+          <!--Submit Button-->
+          <div class="form-input">
+            <button type="submit" id="submit"><span>SUBMIT</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--SurveyForm END-->
+    <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      async
+      defer
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+body {
+  box-sizing: border-box;
+  background: linear-gradient(
+    to right,
+    #7ebdbd 0%,
+    #7ebdbd 50%,
+    #f0a7aa 50%,
+    #f0a7aa 100%
+  );
+  font-family: "Righteous", cursive;
+}
+#container {
+  background: linear-gradient(
+    to right,
+    #7ebdbd 0%,
+    #7ebdbd 50%,
+    #f0a7aa 50%,
+    #f0a7aa 100%
+  );
+  color: black;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 60px;
+}
+form {
+  /*border: 1px solid rgb(138, 109, 109);*/
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+  box-shadow: 5px 5px 30px 3px rgba(0, 0, 0, 0.3),
+    -5px -5px 30px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+
+.form-input {
+  margin: 20px 0 0 80px;
+  padding: 10px;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+  color: #b0894d;
+  position: relative;
+  top: 30px;
+}
+p {
+  margin-bottom: 2rem;
+}
+#p-dropdown,
+#p-radio,
+#p-checkbox {
+  position: relative;
+  top: 1rem;
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#name-label,
+#number-label,
+#email-label,
+#p-dropdown,
+#p-checkbox,
+#p-radio,
+#p-textarea {
+  font-weight: bolder;
+  color: #b0894d;
+  font-size: 20px;
+}
+#email,
+#name,
+#number {
+  margin-bottom: 20px;
+}
+#name-label,
+#number-label,
+#email-label,
+#p-textarea {
+  position: relative;
+  top: 0.5rem;
+}
+#comment {
+  width: 82%;
+  height: 100px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+}
+button {
+  border: none;
+  margin-bottom: 30px;
+  width: 82%;
+  padding: 10px 0;
+  background-color: #fcc062;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2),
+    2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+#name,
+#email,
+#number {
+  width: 82%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 13pt;
+}
+#dropdown {
+  width: 84%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 13pt;
+}
+#description {
+  font-weight: 400;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+@media (max-width: 1024px) {
+  form {
+    width: 100%;
+  }
+  .form-input {
+    margin: 20px 0 0 30px;
+  }
+  #dropdown {
+    width: 92%;
+  }
+  #name,
+  #email,
+  #number,
+  #comment,
+  button {
+    width: 90%;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+}
